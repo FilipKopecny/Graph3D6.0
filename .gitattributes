@@ -1,0 +1,14 @@
+# Normalise line endings of text files.
+* text=auto
+
+*.cs      text diff=csharp
+*.md      text
+*.sln     text eol=crlf
+*.csproj  text eol=crlf
+*.resx    text eol=crlf
+
+# Scene files are kept byte for byte (the originals use CRLF).
+*.dat     -text
+*.DAT     -text
+
+*.png     binary

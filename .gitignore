@@ -1,0 +1,21 @@
+# Build output (also for the legacy project in _legacy/)
+bin/
+obj/
+*.nupkg
+
+# Visual Studio / Rider / VS Code user state
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userprefs
+
+# Test results and tooling
+TestResults/
+*.log
+
+# OS clutter
+Thumbs.db
+Desktop.ini
+.DS_Store

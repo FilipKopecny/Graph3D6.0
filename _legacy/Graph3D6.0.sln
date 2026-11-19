@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph3D6.0", "Graph3D6.0.csproj", "{A1B83F1E-CCB1-49E0-B076-949DF93014F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B83F1E-CCB1-49E0-B076-949DF93014F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B83F1E-CCB1-49E0-B076-949DF93014F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B83F1E-CCB1-49E0-B076-949DF93014F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B83F1E-CCB1-49E0-B076-949DF93014F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30A70B41-D441-4DF9-B3DD-F91C7CA62180}
+	EndGlobalSection
+EndGlobal
