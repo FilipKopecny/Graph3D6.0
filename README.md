@@ -90,7 +90,7 @@ or `opengl`.
 
 ## History
 
-Graph3D began in the 1990s as a university project for a 3D computer graphics course: a DOS
+Graph3D began in 1995 as a university project for a 3D computer graphics course: a DOS
 program in C++ that had to prove an understanding of how 3D images are drawn, without any graphics
 library. The course covered shading, transformations (rotate, pan) and display models (points,
 wireframe, filled faces). The `.dat` scene format and its Slovak keywords (`kamera`, `kvader`,

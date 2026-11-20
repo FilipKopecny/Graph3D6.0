@@ -1,7 +1,8 @@
 # The original DOS program
 
 The C++ source of the university project, as it was written, together with the DOS program built from
-it and the scene files it was tested with. The files are dated 13 October 1999.
+it and the scene files it was tested with. It was written in 1995; the file dates (13 October 1999)
+come from a later copy.
 
 The source files are kept byte for byte (Slovak identifiers and comments, CRLF line endings).
 

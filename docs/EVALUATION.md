@@ -1,6 +1,6 @@
 # Evaluation of the original Graph3D project
 
-An assessment of the 1990s university project kept in [`_legacy/original/`](../_legacy/original/). Its
+An assessment of the 1995 university project kept in [`_legacy/original/`](../_legacy/original/). Its
 purpose was to prove an understanding of how 3D images are produced, without OpenGL or any other
 graphics library.
 
@@ -9,7 +9,8 @@ graphics library.
 | **Course** | 3D computer graphics |
 | **Assignment focus** | Shading, transformations (pan, rotate), display models (points, wireframe, filled faces) |
 | **Platform** | DOS, Borland Turbo C++ 3, SciTech SuperVGA Kit, 15-bit colour SVGA |
-| **Source** | [`pgraf.cpp`](../_legacy/original/pgraf.cpp) and [`deklar.h`](../_legacy/original/deklar.h), about 1,650 lines, and the DOS program built from them (files dated October 1999) |
+| **Source** | [`pgraf.cpp`](../_legacy/original/pgraf.cpp) and [`deklar.h`](../_legacy/original/deklar.h), about 1,650 lines, and the DOS program built from them |
+| **Written** | 1995 |
 
 ## Verdict
 

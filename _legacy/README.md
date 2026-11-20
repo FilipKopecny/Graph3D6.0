@@ -5,7 +5,7 @@ are not part of the modern build.
 
 ## Where it comes from
 
-Graph3D started in the 1990s as a university project for a 3D computer graphics course. The goal
+Graph3D started in 1995 as a university project for a 3D computer graphics course. The goal
 was to show how 3D images are produced from scratch, without a graphics library: the course covered
 shading, transformations (rotate, pan) and display models (points, wireframe, filled faces).
 
