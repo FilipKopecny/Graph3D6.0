@@ -11,4 +11,10 @@
 *.dat     -text
 *.DAT     -text
 
+# The original DOS source is kept byte for byte as well.
+_legacy/original/*.cpp  -text
+_legacy/original/*.h    -text
+
 *.png     binary
+*.exe     binary
+*.prj     binary

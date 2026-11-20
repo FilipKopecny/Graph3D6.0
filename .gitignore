@@ -15,6 +15,17 @@ obj/
 TestResults/
 *.log
 
+# _legacy/original: files from the same old folder that belong to other projects
+_legacy/original/novy.mdb
+_legacy/original/Script1.*
+
+# _legacy/original: the third-party SciTech SuperVGA Kit (not ours to redistribute)
+_legacy/original/svga.h
+_legacy/original/pmode.h
+_legacy/original/debug.h
+_legacy/original/*.lib
+_legacy/original/*.LIB
+
 # OS clutter
 Thumbs.db
 Desktop.ini

@@ -90,15 +90,16 @@ or `opengl`.
 
 ## History
 
-Graph3D began in the mid-1990s as a university project for a 3D computer graphics course: a DOS
-program in C/C++ that had to prove an understanding of how 3D images are drawn, without any graphics
+Graph3D began in the 1990s as a university project for a 3D computer graphics course: a DOS
+program in C++ that had to prove an understanding of how 3D images are drawn, without any graphics
 library. The course covered shading, transformations (rotate, pan) and display models (points,
 wireframe, filled faces). The `.dat` scene format and its Slovak keywords (`kamera`, `kvader`,
-`toroid`, `koniec`) come from that original.
+`toroid`, `meshbs`, `meshbe`, `koniec`) come from that original.
 
-The repository keeps the surviving earlier version in [`_legacy/`](_legacy/): a quick C# port of the
-DOS program with the original C++ still inside as comments. [`docs/EVALUATION.md`](docs/EVALUATION.md)
-assesses that original as a course project: what it covers, where it falls short, and an estimated grade. Everything else is a rewrite for modern
+The repository keeps the earlier versions in [`_legacy/`](_legacy/): the original DOS program
+([`_legacy/original/`](_legacy/original/): C++ source, the built program and its scene files) and a
+later quick C# port of it. [`docs/EVALUATION.md`](docs/EVALUATION.md) assesses the original as a
+course project: what it covers, where it falls short, and an estimated grade. Everything else is a rewrite for modern
 Windows and .NET that keeps the original's approach of computing every pixel in our own code, and adds
 Phong shading, a z-buffer, perspective, colours and optional GPU rendering.
 
@@ -110,7 +111,7 @@ Phong shading, a z-buffer, perspective, colours and optional GPU rendering.
 - `UI/` – main window, viewport control and saved settings
 - `samples/` – example scenes
 - `docs/` – evaluation of the original project, and images for this README
-- `_legacy/` – the earlier version, kept for reference and not part of the build (see its README)
+- `_legacy/` – the earlier versions (the original DOS program and a C# port), kept for reference and not part of the build (see its README)
 
 ## License
 

@@ -1,24 +1,27 @@
 # Legacy version
 
-This folder keeps the earlier program exactly as it was found, for reference. It is not part of the
-modern build.
+This folder keeps the earlier versions of the program exactly as they were found, for reference. They
+are not part of the modern build.
 
 ## Where it comes from
 
-Graph3D started in the mid-1990s as a university project for a 3D computer graphics course. The goal
+Graph3D started in the 1990s as a university project for a 3D computer graphics course. The goal
 was to show how 3D images are produced from scratch, without a graphics library: the course covered
 shading, transformations (rotate, pan) and display models (points, wireframe, filled faces).
-The original was a DOS program in C/C++ for SuperVGA, with direct keyboard access through inline assembly.
 
-What survives is a later, quick port of that program to C# / Windows Forms (.NET 6). The original
-C++ is still in [`_Graphics.cs`](_Graphics.cs) as comments (the scene loader, the menu, the keyboard
-handling and the rotation keys). This is not the final version of the project: that one was lost, and
-it mostly fixed errors rather than adding features.
+Two versions survive:
+
+- [`original/`](original/): the original DOS program in C++ for 15-bit colour SuperVGA, with direct
+  keyboard access through inline assembly. Source, the built program and its scene files; see its
+  [README](original/README.md).
+- This folder: a later, quick port of that program to C# / Windows Forms (.NET 6). Parts of the
+  original C++ are still in [`_Graphics.cs`](_Graphics.cs) as comments (the scene loader, the menu,
+  the keyboard handling and the rotation keys).
 
 For an assessment of the project as coursework (coverage of the brief, strengths, weaknesses and an
 estimated grade), see [`docs/EVALUATION.md`](../docs/EVALUATION.md).
 
-## What it does
+## What the port does
 
 Five display modes, each building on the previous one, as in the original console menu:
 
@@ -39,7 +42,8 @@ Identifiers and comments are in Slovak (`body` = points, `hrany` = edges, `ploch
 
 | File | |
 |------|-|
-| `_Graphics.cs` | The whole renderer, plus the original C++ in comments |
+| `original/` | The original DOS program: C++ source, `grafika.exe` and scene files |
+| `_Graphics.cs` | The whole renderer of the port, plus parts of the original C++ in comments |
 | `Form1.cs`, `Form1.Designer.cs`, `Form1.resx`, `Program.cs` | Windows Forms shell added by the port |
 | `Graph3D6.0.csproj`, `Graph3D6.0.sln` | Project files of the port (.NET 6) |
 | `TOR.DAT` | The scene the program loads: three interlocked tori |
@@ -59,5 +63,6 @@ executable (or start it from this folder). Only `kamera`, `kvader` and `toroid` 
 version; the B-spline and Bézier objects exist only in the commented-out C++ loader.
 
 Known problems of the port: the program can crash when an object leaves the window (no bounds check),
-and reading numbers depends on the Windows regional settings (it fails where the decimal separator is
-a comma). The modern version in the repository root fixes both.
+reading numbers depends on the Windows regional settings (it fails where the decimal separator is
+a comma), and mode 3 draws the scene at a slightly different size (it scales by 110 instead of 100).
+The modern version in the repository root fixes all three.
